@@ -1,7 +1,9 @@
+import { Content } from "./Content";
+
 export interface Folder {
   readonly id: string;
   name: string;
-  content: any;
   subFolders: Folder[];
+  content?: Content[];
   isOpened?: boolean | undefined;
 }
